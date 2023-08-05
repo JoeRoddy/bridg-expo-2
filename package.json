@@ -9,9 +9,9 @@
     "web": "expo start --web",
     "test": "jest --watchAll",
     "postinstall": "yarn generate",
-    "generate": "npx prisma generate && npm explore bridg -- \"node ./dist/generator/index.js ../../prisma/schema.prisma --outDir ./tmp --api https://food-tracker-jr.netlify.app/.netlify/functions/bridg && npm run build-client\"",
+    "generate": "npx prisma generate && npm explore bridg -- \"node ./dist/generator/index.js ../../prisma/schema.prisma --outDir ./tmp --api https://your-netlify-app.netlify.app/.netlify/functions/bridg && npm run build-client\"",
     "build:functions": "tsc --build tsconfig.ntl-functions.json ",
-    "ppush": "dotenv -e .env.production.local -- yarn prisma db push --skip-generate"
+    "prisma:push": "dotenv -e .env -- yarn prisma db push --skip-generate"
   },
   "prisma": {
     "seed": "node ./prisma/seed.ts"
@@ -29,7 +29,7 @@
     "expo-font": "~11.4.0",
     "expo-linking": "~5.0.2",
     "expo-router": "2.0.0",
-    "expo-splash-screen": "~0.20.4",
+    "expo-splash-screen": "~0.20.5",
     "expo-status-bar": "~1.6.0",
     "expo-system-ui": "~2.4.0",
     "expo-web-browser": "~12.3.2",
