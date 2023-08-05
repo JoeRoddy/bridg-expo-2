@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",
+    "outDir": "dist/functions", // Output directory for compiled functions
+    "rootDir": "netlify/functions", // Replace with your functions source directory
+    "strict": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules"],
+  "include": ["netlify/functions/**/*.ts"]
+}
