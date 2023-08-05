@@ -14,7 +14,7 @@ There is nothing special about Netlify here. This would work on any cloud provid
 ### Push your schema to your DB:
 
 1. Add a DB connection string to `.env`
-   - You can add `.env` to your `.gitignore` now
+   - You can add `.env` to your `.gitignore` now, or rename it `.env.local`
 2. `npm run prisma:push`
 
 ### Configuring Bridg with Netlify:
