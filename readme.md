@@ -2,6 +2,15 @@
 
 This example uses Netlify cloud functions as the execution environment for running DB queries. (We need a secure place for Bridg to talk to the DB)
 
+There is nothing special about Netlify here. This would work on any cloud provider / deployed JavaScript evironment. Some other potential options:
+
+- AWS Lambda
+- Firebase Functions
+- Express app deployed on Render, Heroku, wherever
+- Next.js API route
+
+(You probably get the idea)
+
 ### Push your schema to your DB:
 
 1. Add a DB connection string to `.env`
