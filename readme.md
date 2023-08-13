@@ -29,10 +29,7 @@ There is nothing special about Netlify here. This would work on any cloud provid
 5. On Netlify, go to: Site configuration > Environment variables > Add a variable
    - Add `DATABASE_URL` for "key" and your connection string for "values"
 6. Go to: Deploys > "Trigger Deploy" dropdown > Clear cache & deploy site
-7. In `package.json`, update the "generate" script to point to your netlify application:
-   - `your-netlify-app`.netlify.app => `actual-app-name`.netlify.app
-   - I'm aware the generate script is heinous. This is a work in progress and will be removed.
-8. `npm run generate`
+7. `npm run generate`
 
 Your mobile app should now be able to run queries via Bridg running on your Netlify cloud function.
 

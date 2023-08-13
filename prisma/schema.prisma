@@ -1,6 +1,10 @@
 generator client {
-  provider        = "prisma-client-js"
-  previewFeatures = ["extendedWhereUnique"]
+  provider = "prisma-client-js"
+}
+
+generator bridg {
+  provider = "bridg"
+  api      = "https://your-netlify-app.netlify.app/.netlify/functions/bridg"
 }
 
 datasource db {
